@@ -1,4 +1,10 @@
-## hello world
-My name is Navaneeth and I like to code, play soccer and read manga
-👁️
+# Software Developer
 
+### Education
+BSc Statistics with a minor in Computer Science and Math
+
+### Work Experience 
+Senior Developer @ BMO Financial Group
+
+### Projects
+GlowAi
