@@ -1,10 +1,13 @@
 .projects {
   padding: 4rem 2rem;
+  background-color: var(--color-bg-variant, #2c2c6c); /* Grey background to match the site theme */
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
+  text-align: center;
+  color: var(--color-black, #000000);
 }
 
 .projects-grid {
@@ -14,17 +17,75 @@ h2 {
 }
 
 .project-card {
-  background-color: #f8f8f8;
-  padding: 1.5rem;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  background-color: #c4c0c2; /* Light gray color as requested */
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #b4b0b2; /* Slightly darker on hover */
+}
+
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+
+.project-icon svg {
+  font-size: 3rem;
+  color: var(--color-primary, #4db5ff);
+}
+
+.custom-icon {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.circle-icon {
+  border-radius: 50%;
 }
 
 .project-card h3 {
+  color: #1f1f38; /* Dark color for headings */
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.project-card p,
+.project-stats {
+  color: #333333; /* Dark gray for body text and stats */
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.project-link {
+  background-color: var(--color-primary, #4db5ff);
+  color: #ffffff; /* White text on the button for contrast */
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #3a3a3a; /* Darker color on hover */
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
